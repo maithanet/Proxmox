@@ -20,7 +20,7 @@ EOF
 header_info
 echo -e "Loading..."
 APP="Nginx Proxy Manager"
-var_disk="4"
+var_disk="8"
 var_cpu="1"
 var_ram="1024"
 var_os="debian"
@@ -40,13 +40,13 @@ function default_settings() {
   BRG="vmbr0"
   NET="dhcp"
   GATE=""
-  DISABLEIP6="no"
+  DISABLEIP6="yes"
   MTU=""
   SD=""
   NS=""
-  MAC=""
+  MAC="36:CC:E5:28:57:92"
   VLAN=""
-  SSH="no"
+  SSH="yes"
   VERB="no"
   echo_default
 }
